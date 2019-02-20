@@ -153,266 +153,42 @@ input:checked + .container #grid {
   }
 }
 
-#about {
-  width: 100%;
-  margin: 0 auto;
-  position: relative;
-  background-color: #e1f4ff;
+#how-it-works {
+  padding: 100px 0;
+  background-color: green;
 }
 
-@media only screen and (max-width: 955px) {
-  #about {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 13;
-    grid-column: 1 / span 13;
-    padding-top: 50px;
-  }
-}
-
-#about .about-inner {
+#how-it-works .how-it-works-inner {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: minmax(100px, auto);
+      grid-template-rows: minmax(100px, auto);
 }
 
-#about .about-inner .about-left {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 7;
-  grid-column: 1 / span 7;
-  background-color: #e1f4ff;
-  background-position: top center;
-  position: relative;
-  z-index: 5;
-  padding: 50px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[12];
-      grid-template-columns: repeat(12, 1fr);
-  -ms-grid-rows: minmax(50px, auto);
-      grid-template-rows: minmax(50px, auto);
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-@media only screen and (max-width: 955px) {
-  #about .about-inner .about-left {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 13;
-    grid-column: 1 / span 13;
-    padding: 50px;
-  }
-}
-
-#about .about-inner .about-left::before {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  width: 95%;
-  height: 90%;
-  border: 1px solid #c4aeff;
-}
-
-#about .about-inner .about-left #about-content {
+#how-it-works .how-it-works-inner .how-it-works-text {
   -ms-grid-column: 1;
   -ms-grid-column-span: 13;
   grid-column: 1 / span 13;
+  background-color: red;
 }
 
-#about .about-inner .about-left #about-content h1 {
-  font-family: "Lato", sans-serif;
-  font-size: 25px;
-  letter-spacing: 1px;
-  font-weight: 900;
-  line-height: auto;
-  text-align: center;
-  text-transform: uppercase;
-  color: #fff;
-  margin-bottom: 35px;
-}
-
-@media only screen and (max-width: 1140px) {
-  #about .about-inner .about-left #about-content h1 {
-    font-size: 30px;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  #about .about-inner .about-left #about-content h1 {
-    font-size: 20px;
-  }
-}
-
-@media only screen and (max-width: 425px) {
-  #about .about-inner .about-left #about-content h1 {
-    font-size: 18px;
-  }
-}
-
-#about .about-inner .about-left #about-devider {
+#how-it-works .how-it-works-inner .services {
   -ms-grid-column: 1;
   -ms-grid-column-span: 13;
   grid-column: 1 / span 13;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: minmax(100px, auto);
+      grid-template-rows: minmax(100px, auto);
+  grid-gap: 16px;
 }
 
-#about .about-inner .about-left #about-devider::before, #about .about-inner .about-left #about-devider::after {
-  content: ' ';
-  position: absolute;
-  width: 45%;
-  border: 1px solid white;
-}
-
-#about .about-inner .about-left #about-devider::before {
-  left: 0;
-}
-
-#about .about-inner .about-left #about-devider::after {
-  right: 0;
-}
-
-#about .about-inner .about-left #about-devider span {
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  background-color: #c4aeff;
-  display: block;
-}
-
-@media only screen and (max-width: 768px) {
-  #about .about-inner .about-left #about-devider span {
-    width: 15px;
-    height: 15px;
-  }
-}
-
-#about .about-inner .about-left #about-text {
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 13;
-  grid-column: 1 / span 13;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-  padding: 45px 0 0 0;
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: relative;
-}
-
-#about .about-inner .about-left #about-text p {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 25px;
-  color: #fff;
-  width: 90%;
-  margin: 0 auto;
-  text-align: center;
-}
-
-@media only screen and (max-width: 1024px) {
-  #about .about-inner .about-left #about-text p {
-    width: 70%;
-  }
-}
-
-@media only screen and (max-width: 575px) {
-  #about .about-inner .about-left #about-text p {
-    width: 90%;
-  }
-}
-
-#about .about-inner .about-left::after {
-  content: ' ';
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-color: #e1f4ff;
-}
-
-#about .about-inner .about-right {
-  -ms-grid-column: 8;
-  -ms-grid-column-span: 13;
-  grid-column: 8 / span 13;
-}
-
-@media only screen and (max-width: 955px) {
-  #about .about-inner .about-right {
-    -ms-grid-column: 1;
-    -ms-grid-column-span: 13;
-    grid-column: 1 / span 13;
-  }
-}
-
-#about .about-inner .about-right .about-right-inner {
-  padding: 50px;
-}
-
-#about .about-inner .about-right .about-right-inner h1 {
-  font-family: "Roboto", sans-serif;
-  font-size: 30px;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  color: #fff;
-}
-
-#about .about-inner .about-right .about-right-inner p {
-  font-family: "Roboto", sans-serif;
-  line-height: 25px;
-  position: relative;
-  padding-left: 80px;
-  margin-bottom: 50px;
-  color: #fff;
-}
-
-@media only screen and (max-width: 425px) {
-  #about .about-inner .about-right .about-right-inner p {
-    padding-left: 20px;
-  }
-}
-
-#about .about-inner .about-right .about-right-inner p::before {
-  content: ' ';
-  position: absolute;
-  top: 11px;
-  left: 0;
-  width: 60px;
-  height: 2px;
+#how-it-works .how-it-works-inner .services .services-box {
+  padding: 25px;
   background-color: #fff;
-}
-
-@media only screen and (max-width: 425px) {
-  #about .about-inner .about-right .about-right-inner p::before {
-    width: 10px;
-  }
-}
-
-#about .about-inner .about-right .about-right-inner a {
-  text-decoration: none;
-  font-family: "Roboto", sans-serif;
-  font-size: 15px;
-  font-weight: 500;
-  text-transform: uppercase;
-  color: #fff;
-  margin-left: 80px;
 }
 /*# sourceMappingURL=main.css.map */
